@@ -1,84 +1,131 @@
-# Transportation-Cost-Optimization-Scenarios-Analysis-Dashboard
-# 🚛 Power BI Transportation Cost Analysis Dashboard – Freight Optimization Project
+# 🚛 Transportation Cost Analysis Dashboard – Supply Chain Optimization
 
-This project delivers an **end-to-end interactive dashboard** using **Power BI** for analyzing and optimizing **transportation costs and route efficiency**. It provides key KPIs, scenario modeling, and actionable insights for better logistics decision-making.
+This project delivers an **end-to-end interactive Power BI dashboard** designed to analyze and optimize **transportation costs**, **carrier performance**, and **logistics scenarios**. The dashboard enables businesses to monitor KPIs, assess performance by carriers and routes, and perform **What-If analysis** for cost-saving opportunities.
 
 ---
 
-## 🎯 Project Objective
+## 🎯 Project Objectives
 
-To simulate a real-world data analytics scenario where we:
-- Build an **interactive transportation analytics dashboard**.
-- Track **freight costs, shipment performance, and carrier optimization**.
-- Provide **scenario-based insights** for strategic planning.
+- Track **transportation costs and shipment KPIs** in real time.
+- Analyze **mode-wise and carrier-wise performance** to identify optimization opportunities.
+- Simulate cost-saving strategies using **What-If Scenarios** (fuel price impact, carrier adoption, and mode changes).
+- Provide actionable insights for **strategic supply chain decisions**.
 
 ---
 
 ## 🛠 Tools & Skills Used
-- **Power BI**
-- **DAX (Data Analysis Expressions)**
-- **Power Query (M Language)**
-- Data Cleaning & Transformation
-- KPI Creation & Drill-through Features
-- Filters, Slicers, and Conditional Formatting
-- **Scenario Modeling**
-- **Power BI Service – Report Publishing & Sharing**
+
+- **Power BI** – Dashboard development and visualization
+- **DAX** – Calculations for KPIs and scenario analysis
+- **Power Query (M Language)** – Data cleaning and transformation
+- **What-If Analysis** – Scenario planning with dynamic parameters
+- **Data Modeling** – Relationships and measures for accurate analysis
+- **Interactive Slicers & Filters** – Year, Month, Mode, Carrier, Origin, Destination
 
 ---
 
-## 🗂️ Dataset Overview
+## 🗂 Dataset Overview
 
-The dataset contains:
-- **Shipment details** (Route, Carrier, Mode, Weight, Distance)
-- **Cost components** (Base Cost, Fuel Adjustment, Total Freight Cost)
-- **Performance metrics** (Delivery Days, Mode Type)
-- **Scenario data** (Mode Shift, Carrier Optimization)
+The dataset includes detailed transportation and logistics information:
 
----
-
-## 📌 Key KPIs Displayed
-
-| KPI                             | Description                        |
-|--------------------------------|------------------------------------|
-| Total Freight Cost             | Sum of all shipment costs         |
-| Total Shipments                | Count of all shipment records     |
-| Average Cost per Shipment      | Total Cost ÷ Total Shipments      |
-| Top 10 Costly Routes           | Highest cost routes analysis      |
-| Mode-wise Cost Distribution    | Breakdown of costs by transport mode |
+- **Shipment details** (Shipment ID, Origin, Destination, Mode)
+- **Carrier information** (Carrier Name, Mode of Transport)
+- **Distance & Weight metrics** (Average Distance, Weight in tons)
+- **Cost data** (Cost per Ton-Km, Total Shipment Cost)
+- **Scenarios & Savings** (Consolidation, Cheapest Carrier adoption, Mode shift)
 
 ---
 
-## 📊 Dashboard Pages
+## 📌 Key KPIs Tracked
 
-> ⚠️ Click the images below to expand and explore.
+| KPI                            | Value       |
+|--------------------------------|------------|
+| Total Shipments               | 4,900      |
+| Average Distance (KM)         | 1.40K      |
+| Average Cost per Ton-Km       | 3.51       |
+| Average Weight (Tons)         | 17.36      |
+| Total Shipment Cost           | ₹405.87M   |
 
-### 🔹 **Overview Page**  
+---
+
+## 📊 Dashboard Pages & Visuals
+
+### **1️⃣ Overview Page**  
 ![Overview](images/overview.png)
 
-### 🔹 **Route & Carrier Analysis Page**  
-![Routes](images/routes.png)
+- Total Shipments & Cost Metrics
+- **Cost Share by Mode** (Air, Road, Rail)
+- **Shipments by Mode, Origin, and Carrier**
+- Interactive filters for **Year, Month, Mode, Carrier**
 
-### 🔹 **Scenario Modeling (What-If) Page**  
-![Scenario](images/scenario.png)
+---
+
+### **2️⃣ Carrier Performance Page**  
+![Carrier Performance](images/carrier_performance.png)
+
+- **Total Shipment Cost by Carrier & Mode**
+- **Cost per Ton-Km (CPTK) by Carrier**
+- **Potential Savings by Carrier**
+- **Average Distance by Carrier**
+
+---
+
+### **3️⃣ What-If Scenarios Page**  
+![What-If Scenarios](images/what_if_scenarios.png)
+
+- **Baseline vs Scenario vs Consolidation Cost**
+- **Scenario Total Cost by Mode & Carrier**
+- **Dynamic Parameters**:
+    - Fuel Price Change (%)
+    - Cheapest Carrier Adoption (%)
+    - Air → Rail Mode Shift (%)
+- **Consolidation Savings by Route**
 
 ---
 
 ## 📈 Insights Generated
 
-- **Road mode** accounted for the highest freight costs, followed by **Air shipments**.
-- **10% Mode Shift from Air → Rail** significantly reduced overall costs.
-- **Carrier Optimization (70% allocation to cheapest carrier)** improved savings by **X%**.
-- High-cost routes concentrated in **[Region/State]**, indicating scope for route optimization.
+- **Air Transport** accounts for the largest share of cost (over 50%) despite fewer shipments compared to road.
+- **IndianRail and IndigoCargo** are major cost drivers; optimization here can unlock significant savings.
+- **What-If Analysis** shows:
+    - 0.3% fuel price reduction → significant cost savings.
+    - Carrier consolidation & cheapest carrier adoption can save up to **₹30M+**.
+- **Ahmedabad & Hyderabad** routes offer maximum savings through consolidation.
 
 ---
 
 ## 🚀 Key Features Implemented
 
-- ✅ **Dynamic KPIs** for real-time analysis  
-- ✅ **Scenario Modeling** for cost-saving simulations  
-- ✅ **Drill-through reports** for route-level and carrier-level details  
-- ✅ **Interactive filters & slicers** by Mode, Carrier, and Route  
+- ✅ **Dynamic What-If Parameters** for real-time scenario modeling  
+- ✅ **Mode-wise and Carrier-wise Performance Analysis**  
+- ✅ **Interactive Filters & Drill-through** by Year, Month, Mode, Origin, Destination  
+- ✅ Published on **Power BI Service** with secure sharing  
 
 ---
 
-## 📂 Project Structure
+## 🗂 Data Files
+
+- **Raw Data:** [shipments_large.csv](data/shipments_large.csv)  
+- **Cleaned Data:** [cleaned_shipments.csv](data/cleaned_shipments.csv)  
+
+---
+
+
+## 🖼 Sample Dashboard Screenshots
+
+- **Overview Page**  
+![Overview](images/overview.png)
+
+- **Carrier Performance**  
+![Carrier Performance](images/carrier_performance.png)
+
+- **What-If Scenarios**  
+![What-If Scenarios](images/what_if_scenarios.png)
+
+---
+
+
+
+### ⭐ If you found this helpful, don’t forget to **star the repo**!
+
+
