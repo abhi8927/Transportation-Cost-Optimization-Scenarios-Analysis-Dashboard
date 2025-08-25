@@ -51,7 +51,7 @@ The dataset includes detailed transportation and logistics information:
 ## 📊 Dashboard Pages & Visuals
 
 ### **1️⃣ Overview Page**  
-![Overview](images/overview.png)
+![Overview](image/overview.png)
 
 - Total Shipments & Cost Metrics
 - **Cost Share by Mode** (Air, Road, Rail)
@@ -61,7 +61,7 @@ The dataset includes detailed transportation and logistics information:
 ---
 
 ### **2️⃣ Carrier Performance Page**  
-![Carrier Performance](images/carrier_performance.png)
+![Carrier Performance](image/carrier_performance.png)
 
 - **Total Shipment Cost by Carrier & Mode**
 - **Cost per Ton-Km (CPTK) by Carrier**
@@ -71,7 +71,7 @@ The dataset includes detailed transportation and logistics information:
 ---
 
 ### **3️⃣ What-If Scenarios Page**  
-![What-If Scenarios](images/what_if_scenarios.png)
+![What-If Scenarios](image/what_if_scenarios.png)
 
 - **Baseline vs Scenario vs Consolidation Cost**
 - **Scenario Total Cost by Mode & Carrier**
@@ -114,13 +114,13 @@ The dataset includes detailed transportation and logistics information:
 ## 🖼 Sample Dashboard Screenshots
 
 - **Overview Page**  
-![Overview](images/overview.png)
+![Overview](image/overview.png)
 
 - **Carrier Performance**  
-![Carrier Performance](images/carrier_performance.png)
+![Carrier Performance](image/carrier_performance.png)
 
 - **What-If Scenarios**  
-![What-If Scenarios](images/what_if_scenarios.png)
+![What-If Scenarios](image/what_if_scenarios.png)
 
 ---
 
